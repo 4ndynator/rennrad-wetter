@@ -3,7 +3,7 @@ import { computed, ref } from 'vue'
 import type { WeatherData } from '@/types/common'
 import { fetchLocation, fetchWeatherData } from '@/api/fetchWeather.ts'
 
-const weatherData = defineModel<WeatherData>('weather-data');
+const weatherData = defineModel<WeatherData>('weather-data')
 
 const city = ref<string>()
 const loading = ref(false)
@@ -29,21 +29,21 @@ const isDisabled = computed(() => city.value === weatherData.value?.city)
 </script>
 
 <template>
-    <input
-      type="text"
-      v-model="city"
-      @keyup.enter="fetchWeather"
-      placeholder="Enter city"
-      class="w-full p-2 border rounded mb-4"
-    />
-    <button
-      @click="fetchWeather"
-      class="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition disabled:bg-blue-300"
-      :disabled="loading || isDisabled"
-    >
-      {{ loading ? 'Loading...' : 'Get Weather' }}
-    </button>
-    <p v-if="error" class="text-red-500 mt-2">{{ error }}</p>
+  <input
+    type="text"
+    v-model="city"
+    @keyup.enter="fetchWeather"
+    :placeholder="$t('placeholder_search')"
+    class="w-full p-2 border rounded mb-4"
+  />
+  <button
+    @click="fetchWeather"
+    class="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition disabled:bg-blue-300"
+    :disabled="loading || isDisabled"
+  >
+    {{ loading ? 'Loading...' : $t('button_search') }}
+  </button>
+  <p v-if="error" class="text-red-500 mt-2">{{ error }}</p>
 </template>
 
 <style scoped></style>

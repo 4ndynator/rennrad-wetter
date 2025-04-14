@@ -1,0 +1,13 @@
+{
+  "title": "Radklamotten Guide",
+  "button_search": "Suche Wetterdaten",
+  "placeholder_search": "Gib die Stadt ein",
+  "clothing_recommendation": "Radklamotten Empfehlung",
+  "weather": {
+    "temperature": "Temperatur",
+    "temperature_feel": "Gefühlte Temperatur",
+    "rain_probability": "Niederschlag",
+    "wind_speed": "Wind-Geschwindigkeit",
+    "wind_direction": "Windrichtung"
+  }
+}

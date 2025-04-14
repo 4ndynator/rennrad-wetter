@@ -5,7 +5,7 @@ import BackIcon from '@/components/Icons/BackIcon.vue'
 import ForwardIcon from '@/components/Icons/ForwardIcon.vue'
 import WeatherDataDetails from '@/components/WeatherDataDetails.vue'
 
-const weatherData = defineModel<WeatherData>({ required: true });
+const weatherData = defineModel<WeatherData>({ required: true })
 const currentHourIndex = ref()
 
 const currentData = computed(() => {

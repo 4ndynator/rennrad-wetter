@@ -1,0 +1,13 @@
+{
+  "title": "Clothing Guide for Cycling",
+  "button_search": "Search weather data",
+  "placeholder_search": "Enter city",
+  "clothing_recommendation": "Clothing recommendation",
+  "weather": {
+    "temperature": "Temperature",
+    "temperature_feel": "Temperature Feeling",
+    "rain_probability": "Rain",
+    "wind_speed": "Wind speed",
+    "wind_direction": "Wind direction"
+  }
+}
