@@ -10,6 +10,6 @@ const { weatherData } = defineProps<{ weatherData: HourlyWeather }>()
     <p>🤒 {{ $t('weather.temperature_feel') }}: {{ weatherData.temperature_feel }}°C</p>
     <p>🌬️ {{ $t('weather.wind_speed') }}: {{ weatherData.wind_speed }} km/h</p>
     <p>🧭 {{ $t('weather.wind_direction') }}: {{ weatherData.wind_direction }}</p>
-    <p>🌧️ {{ $t('weather.rain_probability') }}: {{ weatherData.rain_probability }} mm</p>
+    <p>🌧️ {{ $t('weather.rain_probability') }}: {{ weatherData.rain_probability }} %</p>
   </div>
 </template>

@@ -22,7 +22,7 @@ function getHeadRecommendations() {
   if (temperature <= 25) {
     recs.push('helmet')
   }
-  if (rain_probability > 30) recs.push('waterproofHood')
+  if (rain_probability > 50) recs.push('waterproofHood')
   return recs
 }
 
@@ -43,7 +43,7 @@ function getMidLayer() {
 
   if (temperature >= 10) {
     if (temperature <= 20) {
-      layers.push(temperature <= 15 ? 'longsleeveJersey' : 'shortsleeveJersey')
+      layers.push(temperature < 15 ? 'longsleeveJersey' : 'shortsleeveJersey')
       if (temperature >= 15) layers.push('sleevesOnly')
     } else if (temperature < 30) {
       layers.push('shortsleeveJersey')
@@ -57,8 +57,8 @@ function getMidLayer() {
 }
 
 function getLowerBody() {
-  const { temperature, rain_probability: rainProb } = weatherData
-  if (rainProb > 50) return ['waterproofPants']
+  const { temperature, rain_probability } = weatherData
+  if (rain_probability > 50) return ['waterproofPants']
 
   if (temperature < 5) return ['thermalTights']
   if (temperature <= 15) return ['thirdBibShorts']

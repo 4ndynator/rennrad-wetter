@@ -6,7 +6,7 @@
   "weather": {
     "temperature": "Temperatur",
     "temperature_feel": "Gefühlte Temperatur",
-    "rain_probability": "Niederschlag",
+    "rain_probability": "Regen Wahrscheinlichkeit",
     "wind_speed": "Wind-Geschwindigkeit",
     "wind_direction": "Windrichtung"
   },
@@ -15,8 +15,8 @@
   },
   "categories": {
     "head": "Kopf",
-    "baselayer": "Oberkörper (Basis)",
-    "midlayer": "Oberkörper (Mittel)",
+    "baselayer": "Basis-Schicht",
+    "midlayer": "Oberkörper",
     "bottoms": "Unterkörper",
     "feet": "Füße/Hände"
   },

@@ -25,7 +25,8 @@ export async function fetchWeatherData(location: GeoLocation): Promise<WeatherDa
     params: {
       latitude: location.latitude,
       longitude: location.longitude,
-      hourly: 'temperature_2m,apparent_temperature,precipitation,wind_speed_10m,wind_direction_10m',
+      hourly:
+        'temperature_2m,apparent_temperature,precipitation_probability,wind_speed_10m,wind_direction_10m',
       wind_speed_unit: 'kmh',
       forecast_days: 1,
     },
@@ -38,7 +39,7 @@ export async function fetchWeatherData(location: GeoLocation): Promise<WeatherDa
       temperature_feel: weatherResponse.data.hourly.apparent_temperature[index],
       wind_speed: weatherResponse.data.hourly.wind_speed_10m[index],
       wind_direction: getWindDirection(weatherResponse.data.hourly.wind_direction_10m[index]),
-      rain_probability: weatherResponse.data.hourly.precipitation[index],
+      rain_probability: weatherResponse.data.hourly.precipitation_probability[index],
     }),
   )
 

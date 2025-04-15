@@ -5,8 +5,8 @@
   "clothing_recommendation": "Clothing recommendation",
   "weather": {
     "temperature": "Temperature",
-    "temperature_feel": "Temperature Feeling",
-    "rain_probability": "Rain",
+    "temperature_feel": "Temperature feeling",
+    "rain_probability": "Rain probability",
     "wind_speed": "Wind speed",
     "wind_direction": "Wind direction"
   },
@@ -15,8 +15,8 @@
   },
   "categories": {
     "head": "Head",
-    "baselayer": "Upper Body (Base)",
-    "midlayer": "Upper Body (Mid)",
+    "baselayer": "Base-Layer",
+    "midlayer": "Upper Body",
     "bottoms": "Lower Body",
     "feet": "Feet/Shoes"
   },
