@@ -9,5 +9,56 @@
     "rain_probability": "Niederschlag",
     "wind_speed": "Wind-Geschwindigkeit",
     "wind_direction": "Windrichtung"
+  },
+  "recommendations": {
+    "title": "Fahrradbekleidungs-Empfehlungen"
+  },
+  "categories": {
+    "head": "Kopf",
+    "baselayer": "Oberkörper (Basis)",
+    "midlayer": "Oberkörper (Mittel)",
+    "bottoms": "Unterkörper",
+    "feet": "Füße/Hände"
+  },
+  "items": {
+    "head": {
+      "thermalHat": "Thermo-Mütze",
+      "sleeve": "Schlauchschaal",
+      "waterproofHood": "Wasserfester Helmüberzug",
+      "ventedHelmet": "Belüfteter Helm",
+      "cap": "Fahrradkappe",
+      "helmet": "Helm"
+    },
+    "baselayer": {
+      "merinoBaseLong": "Merino-Baselayer langarm",
+      "merinoBaseShort": "Merino-Baselayer kurzarm",
+      "baseSleeveless": "Ärmelloses Baselayer",
+      "baseShort": "Kurzärmliges Baselayer",
+      "baseLong": "Langärmliges Baselayer"
+    },
+    "midlayer": {
+      "fleeceJacket": "Angeraute Fleecejacke",
+      "windbreaker": "Winddichte Jacke",
+      "windvest": "Winddichte Weste",
+      "rainjacket": "Leichte Regenjacke",
+      "sleevelessJersey": "Ärmelloses Trikot",
+      "shortsleeveJersey": "Kurzarmtrikot",
+      "longsleeveJersey": "Langarmtrikot",
+      "sleevesOnly": "Armlinge"
+    },
+    "bottoms": {
+      "bibshorts": "Kurze Bib-Shorts",
+      "thirdBibShorts": "3/4 Bib-Shorts",
+      "leglings": "Beinlinge",
+      "thermalTights": "Thermo Bib-Shorts",
+      "waterproofPants": "Wasserfeste Überhose"
+    },
+    "feet": {
+      "thermalSocks": "Thermowollsocken",
+      "shortGloves": "Offene Fahrradhandschuhe",
+      "longGloves": "Geschlossene Fahrradhandschuhe",
+      "windproofGloves": "Wind & Wasserdichte Handschuhe",
+      "waterproofOvershoes": "Neopren-Überschuhe"
+    }
   }
 }

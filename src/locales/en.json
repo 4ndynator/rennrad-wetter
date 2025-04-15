@@ -9,5 +9,56 @@
     "rain_probability": "Rain",
     "wind_speed": "Wind speed",
     "wind_direction": "Wind direction"
+  },
+  "recommendations": {
+    "title": "Cycling Gear Recommendations"
+  },
+  "categories": {
+    "head": "Head",
+    "baselayer": "Upper Body (Base)",
+    "midlayer": "Upper Body (Mid)",
+    "bottoms": "Lower Body",
+    "feet": "Feet/Shoes"
+  },
+  "items": {
+    "head": {
+      "thermalHat": "Thermal cycling cap",
+      "sleeve": "Neck gaiter",
+      "waterproofHood": "Waterproof helmet cover",
+      "ventedHelmet": "Vented helmet",
+      "cap": "Cycling Cap",
+      "helmet": "Helmet"
+    },
+    "baselayer": {
+      "merinoBaseLong": "Merino base layer long sleeve",
+      "merinoBaseShort": "Merino base layer short sleeve",
+      "baseSleeveless": "Sleeveless base layer",
+      "baseShort": "Short sleeve base layer",
+      "baseLong": "Long sleeve base layer"
+    },
+    "midlayer": {
+      "fleeceJacket": "Fleece jacket",
+      "windbreaker": "Windbreaker",
+      "windvest": "Windproof vest",
+      "rainjacket": "Lightweight rain jacket",
+      "sleevelessJersey": "Sleeveless jersey",
+      "shortsleeveJersey": "Short sleeve jersey",
+      "longsleeveJersey": "Long sleeve jersey",
+      "sleevesOnly": "Arm warmers"
+    },
+    "bottoms": {
+      "bibshorts": "Bib shorts",
+      "thirdBibShorts": "3/4 length bib shorts",
+      "leglings": "Leg warmers",
+      "thermalTights": "Thermal bib tights",
+      "waterproofPants": "Waterproof overpants"
+    },
+    "feet": {
+      "thermalSocks": "Thermal wool socks",
+      "shortGloves": "Short-finger gloves",
+      "longGloves": "Full-finger gloves",
+      "windproofGloves": "Windproof gloves",
+      "waterproofOvershoes": "Neoprene overshoes"
+    }
   }
 }

@@ -4,6 +4,7 @@ import type { WeatherData } from '@/types/common'
 import BackIcon from '@/components/Icons/BackIcon.vue'
 import ForwardIcon from '@/components/Icons/ForwardIcon.vue'
 import WeatherDataDetails from '@/components/WeatherDataDetails.vue'
+import ClothingRecommendations from '@/components/ClothingRecommendations.vue'
 
 const weatherData = defineModel<WeatherData>({ required: true })
 const currentHourIndex = ref()
@@ -64,4 +65,5 @@ onMounted(() => {
   </div>
 
   <WeatherDataDetails :weatherData="currentData" />
+  <ClothingRecommendations :weatherData="currentData" />
 </template>
