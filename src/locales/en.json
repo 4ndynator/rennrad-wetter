@@ -5,7 +5,7 @@
   "clothing_recommendation": "Clothing recommendation",
   "weather": {
     "temperature": "Temperature",
-    "temperature_feel": "Temperature feeling",
+    "temperature_feel": "Feels Like",
     "rain_probability": "Rain",
     "wind_speed": "Wind",
     "wind_direction": "Direction"

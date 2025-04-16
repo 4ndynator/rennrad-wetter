@@ -5,7 +5,7 @@
   "clothing_recommendation": "Radklamotten Empfehlung",
   "weather": {
     "temperature": "Temperatur",
-    "temperature_feel": "Gefühlte Temperatur",
+    "temperature_feel": "Gefühlt",
     "rain_probability": "Regen",
     "wind_speed": "Wind",
     "wind_direction": "Richtung"
