@@ -1,12 +1,12 @@
 export enum Direction {
-  NORTH = '⬆️ North',
-  WEST = '⬅️ West',
-  NORTH_WEST = '↖️ North-West',
-  SOUTH = '⬇️ South',
-  SOUTH_WEST = '↙️ South-West',
-  EAST = '➡️ East',
-  SOUTH_EAST = '↘️ South-East',
-  NORTH_EAST = '↗️ North-East',
+  NORTH = '⬆️',
+  WEST = '⬅️',
+  NORTH_WEST = '↖️',
+  SOUTH = '⬇️',
+  SOUTH_WEST = '↙️',
+  EAST = '➡️',
+  SOUTH_EAST = '↘️',
+  NORTH_EAST = '↗️',
 }
 
 export function getWindDirection(degree: number): Direction {

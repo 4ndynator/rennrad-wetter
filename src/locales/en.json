@@ -6,9 +6,9 @@
   "weather": {
     "temperature": "Temperature",
     "temperature_feel": "Temperature feeling",
-    "rain_probability": "Rain probability",
-    "wind_speed": "Wind speed",
-    "wind_direction": "Wind direction"
+    "rain_probability": "Rain",
+    "wind_speed": "Wind",
+    "wind_direction": "Direction"
   },
   "recommendations": {
     "title": "Cycling Gear Recommendations"

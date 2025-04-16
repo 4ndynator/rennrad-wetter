@@ -6,9 +6,9 @@
   "weather": {
     "temperature": "Temperatur",
     "temperature_feel": "Gefühlte Temperatur",
-    "rain_probability": "Regen Wahrscheinlichkeit",
-    "wind_speed": "Wind-Geschwindigkeit",
-    "wind_direction": "Windrichtung"
+    "rain_probability": "Regen",
+    "wind_speed": "Wind",
+    "wind_direction": "Richtung"
   },
   "recommendations": {
     "title": "Fahrradbekleidungs-Empfehlungen"
