@@ -13,7 +13,7 @@ const { weatherData } = defineProps<{ weatherData: HourlyWeather }>()
         class="relative md:w-24 md:h-24 w-20 h-20 flex flex-col items-center justify-center rounded-lg bg-gradient-to-br from-pink-200 to-pink-400 shadow-lg"
       >
         <span class="text-xl">🌡️</span>
-        <span class="text-lg font-semibold">{{ weatherData.temperature }}°C</span>
+        <span class="md:text-lg text-md font-semibold">{{ weatherData.temperature }}°C</span>
         <span class="absolute bottom-1 left-1/2 -translate-x-1/2 text-xs text-gray-600"
           >{{ weatherData.temperature_feel }}°C</span
         >
@@ -25,7 +25,7 @@ const { weatherData } = defineProps<{ weatherData: HourlyWeather }>()
         class="relative md:w-24 md:h-24 w-20 h-20 flex flex-col items-center justify-center rounded-lg bg-gradient-to-br from-blue-200 to-blue-400 shadow-lg"
       >
         <span class="text-xl">🌬️</span>
-        <span class="text-lg font-semibold">{{ weatherData.wind_speed }} km/h</span>
+        <span class="md:text-lg text-md font-semibold">{{ weatherData.wind_speed }} km/h</span>
       </div>
       <span class="text-sm mt-2 text-gray-500">{{ $t('weather.wind_speed') }}</span>
     </div>
@@ -34,7 +34,7 @@ const { weatherData } = defineProps<{ weatherData: HourlyWeather }>()
         class="relative md:w-24 md:h-24 w-20 h-20 flex flex-col items-center justify-center rounded-lg bg-gradient-to-br from-purple-200 to-purple-400 shadow-lg"
       >
         <span class="text-xl">🌧️</span>
-        <span class="text-lg font-semibold">{{ weatherData.rain_probability }}%</span>
+        <span class="md:text-lg text-md font-semibold">{{ weatherData.rain_probability }}%</span>
       </div>
       <span class="text-sm mt-2 text-gray-500">{{ $t('weather.rain_probability') }}</span>
     </div>
