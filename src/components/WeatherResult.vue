@@ -44,7 +44,7 @@ const formattedTime = computed(() => {
 })
 
 const dayLabel = computed(() => {
-  if (!currentDayData.value.length) return 'today'
+  if (!currentDayData.value.length) return ''
   const date = new Date(currentDayData.value[0].hour)
   const today = new Date()
   const tomorrow = new Date(today)
@@ -62,11 +62,13 @@ const dayLabel = computed(() => {
 })
 
 function setCurrentHourIndex() {
+  // Try to find the current hour in the selected day's data
   const now = new Date()
   currentHourIndex.value = currentDayData.value.findIndex((hour) => {
     const hourTime = new Date(hour.hour)
     return hourTime.getHours() === now.getHours()
   })
+  // If not found (e.g., in future days), default to first hour
   if (currentHourIndex.value === -1) {
     currentHourIndex.value = 0
   }
