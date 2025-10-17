@@ -3,6 +3,17 @@
   "button_search": "Suche Wetterdaten",
   "placeholder_search": "Gib die Stadt ein",
   "clothing_recommendation": "Radklamotten Empfehlung",
+  "days": {
+    "today": "Heute",
+    "tomorrow": "Morgen",
+    "dayAfterTomorrow": "Übermorgen"
+  },
+  "navigation": {
+    "previousDay": "Vorheriger Tag",
+    "nextDay": "Nächster Tag",
+    "previousHour": "Vorherige Stunde",
+    "nextHour": "Nächste Stunde"
+  },
   "weather": {
     "temperature": "Temperatur",
     "temperature_feel": "Gefühlt",

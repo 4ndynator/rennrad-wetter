@@ -28,7 +28,7 @@ export async function fetchWeatherData(location: GeoLocation): Promise<WeatherDa
       hourly:
         'temperature_2m,apparent_temperature,precipitation_probability,wind_speed_10m,wind_direction_10m',
       wind_speed_unit: 'kmh',
-      forecast_days: 1,
+      forecast_days: 3,
     },
   })
 

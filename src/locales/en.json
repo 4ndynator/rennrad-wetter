@@ -3,6 +3,17 @@
   "button_search": "Search weather data",
   "placeholder_search": "Enter city",
   "clothing_recommendation": "Clothing recommendation",
+  "days": {
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "dayAfterTomorrow": "Day After Tomorrow"
+  },
+  "navigation": {
+    "previousDay": "Previous Day",
+    "nextDay": "Next Day",
+    "previousHour": "Previous Hour",
+    "nextHour": "Next Hour"
+  },
   "weather": {
     "temperature": "Temperature",
     "temperature_feel": "Feels Like",
