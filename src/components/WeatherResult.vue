@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import type { WeatherData } from '@/types/common'
 import BackIcon from '@/components/Icons/BackIcon.vue'
 import ForwardIcon from '@/components/Icons/ForwardIcon.vue'
@@ -44,7 +44,7 @@ const formattedTime = computed(() => {
 })
 
 const dayLabel = computed(() => {
-  if (!currentDayData.value.length) return ''
+  if (!currentDayData.value.length) return 'today'
   const date = new Date(currentDayData.value[0].hour)
   const today = new Date()
   const tomorrow = new Date(today)
@@ -56,11 +56,21 @@ const dayLabel = computed(() => {
     return 'today'
   } else if (date.toDateString() === tomorrow.toDateString()) {
     return 'tomorrow'
-  } else if (date.toDateString() === dayAfterTomorrow.toDateString()) {
+  } else {
     return 'dayAfterTomorrow'
   }
-  return date.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'short' })
 })
+
+function setCurrentHourIndex() {
+  const now = new Date()
+  currentHourIndex.value = currentDayData.value.findIndex((hour) => {
+    const hourTime = new Date(hour.hour)
+    return hourTime.getHours() === now.getHours()
+  })
+  if (currentHourIndex.value === -1) {
+    currentHourIndex.value = 0
+  }
+}
 
 function changeHour(offset: number) {
   const newIndex = currentHourIndex.value + offset
@@ -73,29 +83,9 @@ function changeDay(offset: number) {
   const newDay = currentDayOffset.value + offset
   if (newDay >= 0 && newDay < dayGroups.value.length) {
     currentDayOffset.value = newDay
-    // Reset to current hour or first hour of the day
-    const now = new Date()
-    currentHourIndex.value = currentDayData.value.findIndex((hour) => {
-      const hourTime = new Date(hour.hour)
-      return hourTime.getHours() === now.getHours()
-    })
-    if (currentHourIndex.value === -1) {
-      currentHourIndex.value = 0
-    }
+    setCurrentHourIndex()
   }
 }
-
-// Watch for day changes to reset hour index
-watch(currentDayOffset, () => {
-  const now = new Date()
-  currentHourIndex.value = currentDayData.value.findIndex((hour) => {
-    const hourTime = new Date(hour.hour)
-    return hourTime.getHours() === now.getHours()
-  })
-  if (currentHourIndex.value === -1) {
-    currentHourIndex.value = 0
-  }
-})
 
 onMounted(() => {
   const now = new Date()
